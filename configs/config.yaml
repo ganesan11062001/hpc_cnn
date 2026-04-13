@@ -1,0 +1,25 @@
+dataset:
+  n_samples: 1500
+  img_size: 32
+  n_classes: 3
+  seed: 42
+
+training:
+  n_trials: 20
+  max_epochs: 30
+  data_path: data/dataset.npz
+  output_dir: results/
+
+slurm:
+  partition: gpu
+  cpus: 4
+  mem: 16G
+  time: "04:00:00"
+  gpus: 1
+  email: murugan.g@northeastern.edu
+
+agent:
+  max_retries: 5
+  poll_interval: 30
+  conda_env: cnn_hpo
+  conda_module: miniconda3/24.11.1

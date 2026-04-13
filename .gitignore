@@ -1,0 +1,12 @@
+__pycache__/
+*.pt
+*.pth
+data/
+results/*.pt
+results_backup_*/
+logs/
+agent_run.log
+*.db
+.DS_Store
+env_activate.sh
+.env
