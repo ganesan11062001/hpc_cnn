@@ -12,7 +12,6 @@
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=murugan.g@northeastern.edu
 
-# ── Explorer HPC CNN Training with Optuna HPO ─────────────────────────────────
 echo "============================================================"
 echo "Job ID        : $SLURM_JOB_ID"
 echo "Node          : $SLURMD_NODENAME"
@@ -20,30 +19,16 @@ echo "Start time    : $(date)"
 echo "Working dir   : $SLURM_SUBMIT_DIR"
 echo "============================================================"
 
-# Go to project directory (edit this path)
 cd $SLURM_SUBMIT_DIR
-
-# Create output dirs
 mkdir -p logs results data
 
-# ── Module loading (Explorer-specific) ───────────────────────────────────────
-module load cuda/11.8
-module load python/3.10
+module load miniconda3/24.11.1
+source activate cnn_hpo
 
-# ── Activate conda env (adjust env name as needed) ───────────────────────────
-# If you have a dedicated env:
-source activate /home/murugan.g/.conda/envs/af3
-# OR use: conda activate cnn_hpo
-
-# ── Install deps if not already present ──────────────────────────────────────
-pip install torch torchvision optuna --quiet 2>/dev/null || true
-
-# ── Step 1: Generate synthetic dataset ───────────────────────────────────────
 echo ""
 echo ">>> Step 1: Generating synthetic dataset..."
 python generate_dataset.py
 
-# ── Step 2: Train CNN with Optuna HPO ────────────────────────────────────────
 echo ""
 echo ">>> Step 2: Training CNN (Optuna HPO, 20 trials, 30 epochs each)..."
 python train_cnn.py \
@@ -52,7 +37,6 @@ python train_cnn.py \
     --n_trials   20 \
     --max_epochs 30
 
-# ── Step 3: Print summary ─────────────────────────────────────────────────────
 echo ""
 echo ">>> Step 3: Results Summary"
 echo "------------------------------------------------------------"

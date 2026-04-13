@@ -1,0 +1,17 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Traceback (most recent call last):
+  File "/home/g.murugan/hpc_cnn/train_cnn.py", line 20, in <module>
+    from optuna.storages import JournalFileBackend
+ImportError: cannot import name 'JournalFileBackend' from 'optuna.storages' (/home/g.murugan/.local/lib/python3.10/site-packages/optuna/storages/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/g.murugan/hpc_cnn/train_cnn.py", line 22, in <module>
+    from optuna.storages._journal.file import JournalFileBackend
+ModuleNotFoundError: No module named 'optuna.storages._journal'
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'results/summary.json'

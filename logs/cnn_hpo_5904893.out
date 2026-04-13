@@ -1,0 +1,21 @@
+============================================================
+Job ID        : 5904893
+Node          : d1002
+Start time    : Mon Apr 13 09:42:37 AM EDT 2026
+Working dir   : /home/g.murugan/hpc_cnn
+============================================================
+
+>>> Step 1: Generating synthetic dataset...
+Dataset saved to data/dataset.npz
+  Train: (1050, 32, 32, 3), Val: (225, 32, 32, 3), Test: (225, 32, 32, 3)
+  Classes: 3 | Image size: 32x32 RGB
+
+>>> Step 2: Training CNN (Optuna HPO, 20 trials, 30 epochs each)...
+
+>>> Step 3: Results Summary
+------------------------------------------------------------
+
+============================================================
+Job complete: Mon Apr 13 09:42:42 AM EDT 2026
+Results in   : results/
+============================================================

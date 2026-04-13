@@ -15,7 +15,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset
 import optuna
-from optuna.storages import JournalStorage, JournalFileBackend
+
 import logging
 
 # ─── Logging ─────────────────────────────────────────────────────────────────
@@ -167,7 +167,7 @@ def main():
     log.info(f"Using device: {device}")
 
     # Optuna study with pruning
-    storage = JournalStorage(JournalFileBackend(os.path.join(args.output_dir, "optuna_journal.log")))
+    storage = f"sqlite:///{os.path.join(args.output_dir, 'optuna.db')}"
     study = optuna.create_study(
         study_name="cnn_hpo",
         direction="maximize",

@@ -1,0 +1,226 @@
+{
+  "trial": 15,
+  "params": {
+    "lr": 0.00023079402812407603,
+    "n_filters1": 64,
+    "n_filters2": 128,
+    "dropout": 0.2500215521725346,
+    "batch_size": 128,
+    "optimizer": "Adam",
+    "weight_decay": 9.374723369983949e-05
+  },
+  "epoch_log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.28316,
+      "train_acc": 0.91238,
+      "val_loss": 0.95177,
+      "val_acc": 0.33333
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.0023,
+      "train_acc": 1.0,
+      "val_loss": 0.71175,
+      "val_acc": 0.47556
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.0003,
+      "train_acc": 1.0,
+      "val_loss": 0.06348,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.00016,
+      "train_acc": 1.0,
+      "val_loss": 0.00152,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.0001,
+      "train_acc": 1.0,
+      "val_loss": 0.00012,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 6,
+      "train_loss": 8e-05,
+      "train_acc": 1.0,
+      "val_loss": 3e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 7,
+      "train_loss": 5e-05,
+      "train_acc": 1.0,
+      "val_loss": 2e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 8,
+      "train_loss": 5e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 9,
+      "train_loss": 5e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 10,
+      "train_loss": 5e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 11,
+      "train_loss": 4e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 12,
+      "train_loss": 4e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 13,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 14,
+      "train_loss": 4e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 15,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 16,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 17,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 18,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 19,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 20,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 21,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 22,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 23,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 24,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 25,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 26,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 27,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 28,
+      "train_loss": 2e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 29,
+      "train_loss": 4e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    },
+    {
+      "epoch": 30,
+      "train_loss": 3e-05,
+      "train_acc": 1.0,
+      "val_loss": 1e-05,
+      "val_acc": 1.0
+    }
+  ],
+  "best_val_acc": 1.0,
+  "best_epoch": 3
+}
