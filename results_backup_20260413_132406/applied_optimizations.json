@@ -1,0 +1,18 @@
+{
+  "n_trials": 20,
+  "max_epochs": 15,
+  "lr_min": 0.0001,
+  "lr_max": 0.01,
+  "filters": [
+    16,
+    64,
+    128
+  ],
+  "batch_sizes": [
+    32,
+    64
+  ],
+  "dropout_min": 0.2,
+  "dropout_max": 0.5,
+  "reason": "The current model has reached high accuracy quickly, so further tuning with more trials and epochs may lead to overfitting, thus a moderate increase in trials and epochs is suggested."
+}

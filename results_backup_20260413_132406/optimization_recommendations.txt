@@ -1,0 +1,15 @@
+1. **No overfitting or underfitting observed**: The model achieves 1.0 val_acc in multiple trials, indicating that the model is capable of fitting the training data and generalizing well to the validation set. However, the training loss and val_loss do not decrease monotonically, suggesting some training instability.
+2. **Hyperparameter changes to improve val_acc**:
+	* Increase `n_filters1` and `n_filters2` to 128 to potentially improve feature extraction.
+	* Decrease `dropout` to 0.1 to reduce regularization and allow the model to learn more complex features.
+	* Increase `batch_size` to 128 to potentially improve training stability and reduce the effect of individual samples.
+3. **Architectural improvements to the CNN**:
+	* Add a third convolutional layer with a larger kernel size (e.g., 5x5) to capture more complex features.
+	* Use batch normalization after each convolutional layer to improve training stability and reduce the effect of internal covariate shift.
+4. **Recommendation for further optimization**:
+	* Run more Optuna trials (e.g., 50-100) to explore the hyperparameter space more thoroughly, as the current 20 trials may not be sufficient to find the optimal configuration.
+	* Increase the number of epochs to 50-100 to allow the model to converge more thoroughly, as some trials may have stopped too early.
+5. **SLURM/HPC optimization**:
+	* Request more GPU resources (e.g., 2-4 GPUs per node) to increase parallelism and reduce training time.
+	* Use a more efficient parallelization strategy, such as data parallelism or model parallelism, to take advantage of multiple GPUs.
+	* Consider using a more efficient optimizer, such as AdamW or SGD with momentum, to reduce training time and improve convergence.
