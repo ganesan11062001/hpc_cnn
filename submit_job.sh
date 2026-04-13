@@ -22,40 +22,41 @@ echo "============================================================"
 cd $SLURM_SUBMIT_DIR
 mkdir -p logs results data
 
-module load miniconda3/24.11.1
-source activate cnn_hpo
+module load cuda/12.1.1 2>/dev/null || true
+source /shared/EL9/explorer/miniconda3/24.11.1/miniconda3/etc/profile.d/conda.sh
+conda activate cnn_hpo
+
+echo "Python: $(which python)"
+echo "Torch: $(python -c 'import torch; print(torch.__version__)' 2>/dev/null)"
+echo "CUDA available: $(python -c 'import torch; print(torch.cuda.is_available())' 2>/dev/null)"
 
 echo ""
-echo ">>> Step 1: Generating synthetic dataset..."
+echo ">>> Step 1: Generating dataset..."
 python generate_dataset.py
 
 echo ""
-echo ">>> Step 2: Training CNN (Optuna HPO, 20 trials, 30 epochs each)..."
+echo ">>> Step 2: Training CNN with Optuna HPO..."
 python train_cnn.py \
     --data_path  data/dataset.npz \
     --output_dir results/ \
-    --n_trials   20 \
-    --max_epochs 30
+    --n_trials 20 \
+    --max_epochs 15
 
 echo ""
-echo ">>> Step 3: Results Summary"
-echo "------------------------------------------------------------"
+echo ">>> Step 3: Summary"
 python -c "
-import json
-with open('results/summary.json') as f:
-    s = json.load(f)
-print(f\"Best Trial   : {s['best_trial']}\")
-print(f\"Best Epoch   : {s['best_epoch']}\")
-print(f\"Best Val Acc : {s['best_val_acc']:.5f}\")
-print(f\"Best Params  : {s['best_params']}\")
-print()
-print('All trials ranked:')
-for i, t in enumerate(s['all_trials_ranked'][:5], 1):
-    print(f\"  #{i}  Trial {t['trial']}  val_acc={t['best_val_acc']:.4f}  epoch={t['best_epoch']}  params={t['params']}\")
+import json, sys
+try:
+    with open('results/summary.json') as f:
+        s = json.load(f)
+    print(f'Best Trial   : {s[chr(98)+chr(101)+chr(115)+chr(116)+chr(95)+chr(116)+chr(114)+chr(105)+chr(97)+chr(108)]}')
+    print(f'Best Epoch   : {s[chr(98)+chr(101)+chr(115)+chr(116)+chr(95)+chr(101)+chr(112)+chr(111)+chr(99)+chr(104)]}')
+    print(f'Best Val Acc : {s[chr(98)+chr(101)+chr(115)+chr(116)+chr(95)+chr(118)+chr(97)+chr(108)+chr(95)+chr(97)+chr(99)+chr(99)]:.5f}')
+except Exception as e:
+    print(f'Summary error: {e}', file=sys.stderr)
+    sys.exit(1)
 "
 
-echo ""
 echo "============================================================"
 echo "Job complete: $(date)"
-echo "Results in   : results/"
 echo "============================================================"

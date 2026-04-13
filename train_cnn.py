@@ -61,11 +61,11 @@ def load_data(data_path, batch_size):
 # ─── Single Trial Training ────────────────────────────────────────────────────
 def train_trial(trial, args, device):
     # Suggest hyperparameters
-    lr         = trial.suggest_float("lr", 1e-4, 1e-2, log=True)
-    n_filters1 = trial.suggest_categorical("n_filters1", [16, 32, 64])
-    n_filters2 = trial.suggest_categorical("n_filters2", [32, 64, 128])
-    dropout    = trial.suggest_float("dropout", 0.1, 0.5)
-    batch_size = trial.suggest_categorical("batch_size", [32, 64, 128])
+    lr         = trial.suggest_float("lr", 0.0001, 0.01, log=True)
+    n_filters1 = trial.suggest_categorical("n_filters1", [16, 64, 128])
+    n_filters2 = trial.suggest_categorical("n_filters2", [16, 64, 128])
+    dropout    = trial.suggest_float("dropout", 0.2, 0.5)
+    batch_size = trial.suggest_categorical("batch_size", [32, 64])
     optimizer_name = trial.suggest_categorical("optimizer", ["Adam", "SGD"])
     weight_decay   = trial.suggest_float("weight_decay", 1e-5, 1e-3, log=True)
 

@@ -1,0 +1,44 @@
+============================================================
+Job ID        : 5910812
+Node          : d1013
+Start time    : Mon Apr 13 12:54:34 PM EDT 2026
+Working dir   : /home/g.murugan/hpc_cnn
+============================================================
+Python: /shared/EL9/explorer/miniconda3/24.11.1/miniconda3/bin/python
+Torch: 2.11.0+cu130
+CUDA available: False
+
+>>> Step 1: Generating dataset...
+Dataset saved to data/dataset.npz
+  Train: (1050, 32, 32, 3), Val: (225, 32, 32, 3), Test: (225, 32, 32, 3)
+  Classes: 3 | Image size: 32x32 RGB
+
+>>> Step 2: Training CNN with Optuna HPO...
+[I 2026-04-13 12:56:02,589] Trial 20 finished with value: 1.0 and parameters: {'lr': 0.0014566767317263293, 'n_filters1': 64, 'n_filters2': 128, 'dropout': 0.32770674484949364, 'batch_size': 64, 'optimizer': 'Adam', 'weight_decay': 0.0006004348801325392}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 12:56:33,661] Trial 21 finished with value: 1.0 and parameters: {'lr': 0.0034309875674971763, 'n_filters1': 32, 'n_filters2': 32, 'dropout': 0.14864952491279815, 'batch_size': 32, 'optimizer': 'Adam', 'weight_decay': 1.0042794109352865e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 12:57:03,787] Trial 22 finished with value: 1.0 and parameters: {'lr': 0.003745314076293742, 'n_filters1': 32, 'n_filters2': 32, 'dropout': 0.10256935289389202, 'batch_size': 32, 'optimizer': 'Adam', 'weight_decay': 1.1285458771619985e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 12:57:34,081] Trial 23 finished with value: 1.0 and parameters: {'lr': 0.0005075901196752754, 'n_filters1': 32, 'n_filters2': 32, 'dropout': 0.22311743115802363, 'batch_size': 32, 'optimizer': 'Adam', 'weight_decay': 1.8935578696159756e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 12:58:03,791] Trial 24 finished with value: 1.0 and parameters: {'lr': 0.008758666927036318, 'n_filters1': 32, 'n_filters2': 32, 'dropout': 0.3881793047187818, 'batch_size': 32, 'optimizer': 'Adam', 'weight_decay': 1.8747387369086723e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 12:58:34,639] Trial 25 finished with value: 1.0 and parameters: {'lr': 0.002899599865149757, 'n_filters1': 32, 'n_filters2': 32, 'dropout': 0.2707298785468154, 'batch_size': 32, 'optimizer': 'Adam', 'weight_decay': 0.00023398241840193293}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 12:59:02,615] Trial 26 finished with value: 1.0 and parameters: {'lr': 0.00119753822631054, 'n_filters1': 16, 'n_filters2': 64, 'dropout': 0.15890609696895772, 'batch_size': 64, 'optimizer': 'SGD', 'weight_decay': 4.340959956403064e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 12:59:31,721] Trial 27 finished with value: 1.0 and parameters: {'lr': 0.0006538078351302963, 'n_filters1': 32, 'n_filters2': 32, 'dropout': 0.31669557328802034, 'batch_size': 64, 'optimizer': 'Adam', 'weight_decay': 1.4048795646880796e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:00:01,125] Trial 28 finished with value: 1.0 and parameters: {'lr': 0.00010557025302963707, 'n_filters1': 16, 'n_filters2': 64, 'dropout': 0.20584816110804316, 'batch_size': 128, 'optimizer': 'Adam', 'weight_decay': 8.645590962970944e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:05:43,295] Trial 29 finished with value: 1.0 and parameters: {'lr': 0.005270684076669684, 'n_filters1': 64, 'n_filters2': 128, 'dropout': 0.37587238644541915, 'batch_size': 32, 'optimizer': 'Adam', 'weight_decay': 2.7672246776272792e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:06:45,949] Trial 30 finished with value: 1.0 and parameters: {'lr': 0.0003361456168691015, 'n_filters1': 64, 'n_filters2': 128, 'dropout': 0.42000491575982957, 'batch_size': 64, 'optimizer': 'Adam', 'weight_decay': 0.00013625340203223782}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:07:51,756] Trial 31 finished with value: 1.0 and parameters: {'lr': 0.0001785849978444821, 'n_filters1': 64, 'n_filters2': 128, 'dropout': 0.4188188180731258, 'batch_size': 64, 'optimizer': 'Adam', 'weight_decay': 2.6034236803464202e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:08:56,284] Trial 32 finished with value: 1.0 and parameters: {'lr': 0.0001521140693555338, 'n_filters1': 64, 'n_filters2': 128, 'dropout': 0.38431628263426065, 'batch_size': 64, 'optimizer': 'SGD', 'weight_decay': 6.445001559830895e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:09:58,881] Trial 34 finished with value: 1.0 and parameters: {'lr': 0.0002043485052356591, 'n_filters1': 64, 'n_filters2': 128, 'dropout': 0.4674454891630697, 'batch_size': 64, 'optimizer': 'Adam', 'weight_decay': 3.608009303908009e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:10:53,071] Trial 37 finished with value: 1.0 and parameters: {'lr': 0.00035074127575629595, 'n_filters1': 32, 'n_filters2': 128, 'dropout': 0.3142842782373059, 'batch_size': 32, 'optimizer': 'Adam', 'weight_decay': 1.4211427310256022e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:11:23,799] Trial 40 finished with value: 1.0 and parameters: {'lr': 0.00011679139465675903, 'n_filters1': 16, 'n_filters2': 64, 'dropout': 0.1674930908830719, 'batch_size': 128, 'optimizer': 'SGD', 'weight_decay': 0.00011625323075357558}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:12:17,883] Trial 44 finished with value: 1.0 and parameters: {'lr': 0.0004464037677818765, 'n_filters1': 64, 'n_filters2': 64, 'dropout': 0.180618501062642, 'batch_size': 128, 'optimizer': 'SGD', 'weight_decay': 5.379030113429638e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:13:03,368] Trial 47 finished with value: 1.0 and parameters: {'lr': 0.0006902259156624362, 'n_filters1': 64, 'n_filters2': 64, 'dropout': 0.2039047592969816, 'batch_size': 64, 'optimizer': 'SGD', 'weight_decay': 0.00023300487882096607}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:14:05,741] Trial 50 finished with value: 1.0 and parameters: {'lr': 0.001495268784276093, 'n_filters1': 64, 'n_filters2': 128, 'dropout': 0.21674642054270504, 'batch_size': 64, 'optimizer': 'Adam', 'weight_decay': 7.531295078349082e-05}. Best is trial 0 with value: 1.0.
+[I 2026-04-13 13:14:56,545] Trial 53 finished with value: 1.0 and parameters: {'lr': 0.00015796044628346988, 'n_filters1': 32, 'n_filters2': 128, 'dropout': 0.3561411193585999, 'batch_size': 32, 'optimizer': 'SGD', 'weight_decay': 0.000622978413398051}. Best is trial 0 with value: 1.0.
+
+>>> Step 3: Summary
+Best Trial   : 0
+Best Epoch   : 1
+Best Val Acc : 1.00000
+============================================================
+Job complete: Mon Apr 13 01:14:57 PM EDT 2026
+============================================================

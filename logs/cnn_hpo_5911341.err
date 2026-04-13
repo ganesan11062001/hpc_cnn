@@ -1,0 +1,311 @@
+/home/g.murugan/.local/lib/python3.10/site-packages/torch/cuda/__init__.py:180: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 12030). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:119.)
+  return torch._C._cuda_getDeviceCount() > 0
+2026-04-13 13:24:35,421 [INFO] Using device: cpu
+[I 2026-04-13 13:24:37,051] A new study created in RDB with name: cnn_hpo
+  0%|          | 0/20 [00:00<?, ?it/s]2026-04-13 13:24:40,322 [INFO] Trial 0 | Epoch   1 | train_acc=0.4914 val_acc=0.2889 val_loss=1.10249
+2026-04-13 13:24:40,917 [INFO] Trial 0 | Epoch   2 | train_acc=0.6810 val_acc=0.4400 val_loss=1.06805
+2026-04-13 13:24:41,553 [INFO] Trial 0 | Epoch   3 | train_acc=0.8390 val_acc=0.9911 val_loss=0.90575
+2026-04-13 13:24:42,245 [INFO] Trial 0 | Epoch   4 | train_acc=0.9486 val_acc=1.0000 val_loss=0.79131
+2026-04-13 13:24:42,836 [INFO] Trial 0 | Epoch   5 | train_acc=0.9781 val_acc=1.0000 val_loss=0.71482
+2026-04-13 13:24:43,457 [INFO] Trial 0 | Epoch   6 | train_acc=0.9905 val_acc=1.0000 val_loss=0.65167
+2026-04-13 13:24:44,079 [INFO] Trial 0 | Epoch   7 | train_acc=0.9962 val_acc=1.0000 val_loss=0.60118
+2026-04-13 13:24:44,677 [INFO] Trial 0 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.56256
+2026-04-13 13:24:45,289 [INFO] Trial 0 | Epoch   9 | train_acc=0.9990 val_acc=1.0000 val_loss=0.53112
+2026-04-13 13:24:45,881 [INFO] Trial 0 | Epoch  10 | train_acc=0.9990 val_acc=1.0000 val_loss=0.50669
+2026-04-13 13:24:46,456 [INFO] Trial 0 | Epoch  11 | train_acc=0.9990 val_acc=1.0000 val_loss=0.49128
+2026-04-13 13:24:47,043 [INFO] Trial 0 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.48211
+2026-04-13 13:24:47,665 [INFO] Trial 0 | Epoch  13 | train_acc=0.9990 val_acc=1.0000 val_loss=0.47586
+2026-04-13 13:24:48,280 [INFO] Trial 0 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.47514
+2026-04-13 13:24:48,898 [INFO] Trial 0 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.47386
+                                        0%|          | 0/20 [00:12<?, ?it/s]Best trial: 0. Best value: 1:   0%|          | 0/20 [00:12<?, ?it/s]Best trial: 0. Best value: 1:   5%|▌         | 1/20 [00:12<03:53, 12.27s/it]2026-04-13 13:24:50,885 [INFO] Trial 1 | Epoch   1 | train_acc=0.9448 val_acc=1.0000 val_loss=0.00390
+2026-04-13 13:24:52,075 [INFO] Trial 1 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00005
+2026-04-13 13:24:53,204 [INFO] Trial 1 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00003
+2026-04-13 13:24:54,403 [INFO] Trial 1 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00002
+2026-04-13 13:24:55,612 [INFO] Trial 1 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00002
+2026-04-13 13:24:56,951 [INFO] Trial 1 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00002
+2026-04-13 13:24:58,266 [INFO] Trial 1 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:24:59,430 [INFO] Trial 1 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:25:00,587 [INFO] Trial 1 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:25:01,745 [INFO] Trial 1 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:25:02,876 [INFO] Trial 1 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:25:04,073 [INFO] Trial 1 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:25:05,193 [INFO] Trial 1 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:25:06,286 [INFO] Trial 1 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:25:07,550 [INFO] Trial 1 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+                                                                            Best trial: 0. Best value: 1:   5%|▌         | 1/20 [00:30<03:53, 12.27s/it]Best trial: 0. Best value: 1:   5%|▌         | 1/20 [00:30<03:53, 12.27s/it]Best trial: 0. Best value: 1:  10%|█         | 2/20 [00:30<04:46, 15.92s/it]2026-04-13 13:25:10,590 [INFO] Trial 2 | Epoch   1 | train_acc=0.9810 val_acc=1.0000 val_loss=0.01609
+2026-04-13 13:25:12,759 [INFO] Trial 2 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00040
+2026-04-13 13:25:14,885 [INFO] Trial 2 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00026
+2026-04-13 13:25:17,020 [INFO] Trial 2 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00019
+2026-04-13 13:25:19,282 [INFO] Trial 2 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00016
+2026-04-13 13:25:21,652 [INFO] Trial 2 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00012
+2026-04-13 13:25:23,823 [INFO] Trial 2 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00009
+2026-04-13 13:25:26,044 [INFO] Trial 2 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00007
+2026-04-13 13:25:28,265 [INFO] Trial 2 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00007
+2026-04-13 13:25:30,485 [INFO] Trial 2 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00006
+2026-04-13 13:25:32,691 [INFO] Trial 2 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00005
+2026-04-13 13:25:34,979 [INFO] Trial 2 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00005
+2026-04-13 13:25:37,273 [INFO] Trial 2 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00006
+2026-04-13 13:25:39,478 [INFO] Trial 2 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00005
+2026-04-13 13:25:41,732 [INFO] Trial 2 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00005
+                                                                            Best trial: 0. Best value: 1:  10%|█         | 2/20 [01:04<04:46, 15.92s/it]Best trial: 0. Best value: 1:  10%|█         | 2/20 [01:04<04:46, 15.92s/it]Best trial: 0. Best value: 1:  15%|█▌        | 3/20 [01:04<06:52, 24.25s/it]2026-04-13 13:25:44,629 [INFO] Trial 3 | Epoch   1 | train_acc=0.9771 val_acc=1.0000 val_loss=0.00017
+2026-04-13 13:25:46,961 [INFO] Trial 3 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:25:49,112 [INFO] Trial 3 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:25:51,502 [INFO] Trial 3 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:25:53,680 [INFO] Trial 3 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:25:55,907 [INFO] Trial 3 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:25:58,075 [INFO] Trial 3 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:26:00,267 [INFO] Trial 3 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:26:02,370 [INFO] Trial 3 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:26:04,579 [INFO] Trial 3 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:26:06,747 [INFO] Trial 3 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:26:08,909 [INFO] Trial 3 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:26:11,021 [INFO] Trial 3 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:26:13,140 [INFO] Trial 3 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:26:15,346 [INFO] Trial 3 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+                                                                            Best trial: 0. Best value: 1:  15%|█▌        | 3/20 [01:39<06:52, 24.25s/it]Best trial: 0. Best value: 1:  15%|█▌        | 3/20 [01:39<06:52, 24.25s/it]Best trial: 0. Best value: 1:  20%|██        | 4/20 [01:39<07:30, 28.16s/it]2026-04-13 13:26:19,110 [INFO] Trial 4 | Epoch   1 | train_acc=0.9057 val_acc=0.8489 val_loss=0.72010
+2026-04-13 13:26:21,206 [INFO] Trial 4 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03733
+2026-04-13 13:26:23,350 [INFO] Trial 4 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00245
+2026-04-13 13:26:25,521 [INFO] Trial 4 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00097
+2026-04-13 13:26:27,686 [INFO] Trial 4 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00076
+2026-04-13 13:26:29,871 [INFO] Trial 4 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00064
+2026-04-13 13:26:31,991 [INFO] Trial 4 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00060
+2026-04-13 13:26:34,124 [INFO] Trial 4 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00055
+2026-04-13 13:26:36,249 [INFO] Trial 4 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00055
+2026-04-13 13:26:38,346 [INFO] Trial 4 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00048
+2026-04-13 13:26:40,484 [INFO] Trial 4 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00049
+2026-04-13 13:26:42,605 [INFO] Trial 4 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00049
+2026-04-13 13:26:44,868 [INFO] Trial 4 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00048
+2026-04-13 13:26:47,006 [INFO] Trial 4 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00046
+2026-04-13 13:26:49,273 [INFO] Trial 4 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00048
+                                                                            Best trial: 0. Best value: 1:  20%|██        | 4/20 [02:12<07:30, 28.16s/it]Best trial: 0. Best value: 1:  20%|██        | 4/20 [02:12<07:30, 28.16s/it]Best trial: 0. Best value: 1:  25%|██▌       | 5/20 [02:12<07:30, 30.05s/it]2026-04-13 13:26:52,273 [INFO] Trial 5 | Epoch   1 | train_acc=0.8886 val_acc=1.0000 val_loss=0.59710
+2026-04-13 13:26:54,407 [INFO] Trial 5 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.01974
+2026-04-13 13:26:56,524 [INFO] Trial 5 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00170
+2026-04-13 13:26:58,640 [INFO] Trial 5 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00079
+2026-04-13 13:27:00,855 [INFO] Trial 5 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00063
+2026-04-13 13:27:02,996 [INFO] Trial 5 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00056
+2026-04-13 13:27:05,283 [INFO] Trial 5 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00051
+2026-04-13 13:27:07,411 [INFO] Trial 5 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00047
+2026-04-13 13:27:09,529 [INFO] Trial 5 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00044
+2026-04-13 13:27:11,659 [INFO] Trial 5 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00043
+2026-04-13 13:27:14,089 [INFO] Trial 5 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00042
+2026-04-13 13:27:16,302 [INFO] Trial 5 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00041
+2026-04-13 13:27:18,486 [INFO] Trial 5 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00041
+2026-04-13 13:27:20,674 [INFO] Trial 5 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00041
+2026-04-13 13:27:22,768 [INFO] Trial 5 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00041
+                                                                            Best trial: 0. Best value: 1:  25%|██▌       | 5/20 [02:45<07:30, 30.05s/it]Best trial: 0. Best value: 1:  25%|██▌       | 5/20 [02:45<07:30, 30.05s/it]Best trial: 0. Best value: 1:  30%|███       | 6/20 [02:45<07:17, 31.22s/it]2026-04-13 13:27:25,389 [INFO] Trial 6 | Epoch   1 | train_acc=0.7867 val_acc=1.0000 val_loss=0.99877
+2026-04-13 13:27:27,509 [INFO] Trial 6 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.29036
+2026-04-13 13:27:29,682 [INFO] Trial 6 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03582
+2026-04-13 13:27:31,677 [INFO] Trial 6 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.01449
+2026-04-13 13:27:33,839 [INFO] Trial 6 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00972
+2026-04-13 13:27:35,764 [INFO] Trial 6 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00789
+2026-04-13 13:27:37,590 [INFO] Trial 6 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00688
+2026-04-13 13:27:39,786 [INFO] Trial 6 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00621
+2026-04-13 13:27:41,713 [INFO] Trial 6 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00573
+2026-04-13 13:27:43,627 [INFO] Trial 6 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00538
+2026-04-13 13:27:45,569 [INFO] Trial 6 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00517
+2026-04-13 13:27:47,504 [INFO] Trial 6 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00511
+2026-04-13 13:27:49,463 [INFO] Trial 6 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00490
+2026-04-13 13:27:51,533 [INFO] Trial 6 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00478
+2026-04-13 13:27:53,425 [INFO] Trial 6 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00482
+                                                                            Best trial: 0. Best value: 1:  30%|███       | 6/20 [03:16<07:17, 31.22s/it]Best trial: 0. Best value: 1:  30%|███       | 6/20 [03:16<07:17, 31.22s/it]Best trial: 0. Best value: 1:  35%|███▌      | 7/20 [03:16<06:43, 31.06s/it]2026-04-13 13:27:55,312 [INFO] Trial 7 | Epoch   1 | train_acc=0.7200 val_acc=0.5111 val_loss=0.99351
+2026-04-13 13:27:56,395 [INFO] Trial 7 | Epoch   2 | train_acc=0.9990 val_acc=1.0000 val_loss=0.30702
+2026-04-13 13:27:57,553 [INFO] Trial 7 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.04394
+2026-04-13 13:27:58,676 [INFO] Trial 7 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.01681
+2026-04-13 13:27:59,782 [INFO] Trial 7 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.01126
+2026-04-13 13:28:00,885 [INFO] Trial 7 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00893
+2026-04-13 13:28:02,044 [INFO] Trial 7 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00731
+2026-04-13 13:28:03,281 [INFO] Trial 7 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00645
+2026-04-13 13:28:04,539 [INFO] Trial 7 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00560
+2026-04-13 13:28:05,929 [INFO] Trial 7 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00526
+2026-04-13 13:28:07,190 [INFO] Trial 7 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00503
+2026-04-13 13:28:08,313 [INFO] Trial 7 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00497
+2026-04-13 13:28:09,544 [INFO] Trial 7 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00490
+2026-04-13 13:28:10,745 [INFO] Trial 7 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00489
+2026-04-13 13:28:11,889 [INFO] Trial 7 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00473
+                                                                            Best trial: 0. Best value: 1:  35%|███▌      | 7/20 [03:35<06:43, 31.06s/it]Best trial: 0. Best value: 1:  35%|███▌      | 7/20 [03:35<06:43, 31.06s/it]Best trial: 0. Best value: 1:  40%|████      | 8/20 [03:35<05:24, 27.07s/it]2026-04-13 13:28:14,646 [INFO] Trial 8 | Epoch   1 | train_acc=0.9362 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:16,462 [INFO] Trial 8 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:18,310 [INFO] Trial 8 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:20,101 [INFO] Trial 8 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:21,898 [INFO] Trial 8 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:23,638 [INFO] Trial 8 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:25,345 [INFO] Trial 8 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:27,109 [INFO] Trial 8 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:28,876 [INFO] Trial 8 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:30,762 [INFO] Trial 8 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:32,433 [INFO] Trial 8 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:34,151 [INFO] Trial 8 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:35,903 [INFO] Trial 8 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:37,769 [INFO] Trial 8 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:28:39,528 [INFO] Trial 8 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+                                                                            Best trial: 0. Best value: 1:  40%|████      | 8/20 [04:02<05:24, 27.07s/it]Best trial: 0. Best value: 1:  40%|████      | 8/20 [04:02<05:24, 27.07s/it]Best trial: 0. Best value: 1:  45%|████▌     | 9/20 [04:02<04:59, 27.22s/it]2026-04-13 13:28:40,936 [INFO] Trial 9 | Epoch   1 | train_acc=0.9067 val_acc=0.6844 val_loss=0.86071
+2026-04-13 13:28:41,619 [INFO] Trial 9 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.04388
+2026-04-13 13:28:42,521 [INFO] Trial 9 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00310
+2026-04-13 13:28:43,304 [INFO] Trial 9 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00123
+2026-04-13 13:28:43,909 [INFO] Trial 9 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00088
+2026-04-13 13:28:44,558 [INFO] Trial 9 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00064
+2026-04-13 13:28:45,222 [INFO] Trial 9 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00052
+2026-04-13 13:28:45,921 [INFO] Trial 9 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00042
+2026-04-13 13:28:46,732 [INFO] Trial 9 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00036
+2026-04-13 13:28:47,373 [INFO] Trial 9 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00033
+2026-04-13 13:28:48,094 [INFO] Trial 9 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00032
+2026-04-13 13:28:48,844 [INFO] Trial 9 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00030
+2026-04-13 13:28:49,491 [INFO] Trial 9 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00029
+2026-04-13 13:28:50,280 [INFO] Trial 9 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00029
+2026-04-13 13:28:50,936 [INFO] Trial 9 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00028
+                                                                            Best trial: 0. Best value: 1:  45%|████▌     | 9/20 [04:14<04:59, 27.22s/it]Best trial: 0. Best value: 1:  45%|████▌     | 9/20 [04:14<04:59, 27.22s/it]Best trial: 0. Best value: 1:  50%|█████     | 10/20 [04:14<03:43, 22.33s/it]2026-04-13 13:28:53,548 [INFO] Trial 10 | Epoch   1 | train_acc=0.7962 val_acc=0.6400 val_loss=0.89659
+2026-04-13 13:28:55,072 [INFO] Trial 10 | Epoch   2 | train_acc=0.9971 val_acc=1.0000 val_loss=0.32670
+2026-04-13 13:28:56,888 [INFO] Trial 10 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.17840
+2026-04-13 13:28:58,482 [INFO] Trial 10 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.11559
+2026-04-13 13:29:00,076 [INFO] Trial 10 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.08302
+2026-04-13 13:29:01,537 [INFO] Trial 10 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.06439
+2026-04-13 13:29:03,007 [INFO] Trial 10 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.05258
+2026-04-13 13:29:04,469 [INFO] Trial 10 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.04547
+2026-04-13 13:29:05,948 [INFO] Trial 10 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.04034
+2026-04-13 13:29:07,456 [INFO] Trial 10 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03760
+2026-04-13 13:29:08,982 [INFO] Trial 10 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03558
+2026-04-13 13:29:10,514 [INFO] Trial 10 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03426
+2026-04-13 13:29:11,990 [INFO] Trial 10 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03272
+2026-04-13 13:29:13,471 [INFO] Trial 10 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03315
+2026-04-13 13:29:14,938 [INFO] Trial 10 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03343
+                                                                             Best trial: 0. Best value: 1:  50%|█████     | 10/20 [04:38<03:43, 22.33s/it]Best trial: 0. Best value: 1:  50%|█████     | 10/20 [04:38<03:43, 22.33s/it]Best trial: 0. Best value: 1:  55%|█████▌    | 11/20 [04:38<03:25, 22.85s/it]2026-04-13 13:29:16,788 [INFO] Trial 11 | Epoch   1 | train_acc=0.9629 val_acc=1.0000 val_loss=0.00378
+2026-04-13 13:29:17,871 [INFO] Trial 11 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00003
+2026-04-13 13:29:18,966 [INFO] Trial 11 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00002
+2026-04-13 13:29:20,029 [INFO] Trial 11 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00002
+2026-04-13 13:29:21,198 [INFO] Trial 11 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:29:22,314 [INFO] Trial 11 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:29:23,448 [INFO] Trial 11 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:29:24,663 [INFO] Trial 11 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:29:25,762 [INFO] Trial 11 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:29:26,924 [INFO] Trial 11 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:29:28,178 [INFO] Trial 11 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:29:29,359 [INFO] Trial 11 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:29:30,527 [INFO] Trial 11 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:29:31,652 [INFO] Trial 11 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:29:32,815 [INFO] Trial 11 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+                                                                             Best trial: 0. Best value: 1:  55%|█████▌    | 11/20 [04:56<03:25, 22.85s/it]Best trial: 0. Best value: 1:  55%|█████▌    | 11/20 [04:56<03:25, 22.85s/it]Best trial: 0. Best value: 1:  60%|██████    | 12/20 [04:56<02:50, 21.35s/it]2026-04-13 13:29:34,432 [INFO] Trial 12 | Epoch   1 | train_acc=0.4867 val_acc=0.9733 val_loss=1.04059
+2026-04-13 13:29:35,349 [INFO] Trial 12 | Epoch   2 | train_acc=0.8581 val_acc=1.0000 val_loss=0.77264
+2026-04-13 13:29:36,092 [INFO] Trial 12 | Epoch   3 | train_acc=0.9676 val_acc=1.0000 val_loss=0.56848
+2026-04-13 13:29:36,885 [INFO] Trial 12 | Epoch   4 | train_acc=0.9952 val_acc=1.0000 val_loss=0.40418
+2026-04-13 13:29:37,747 [INFO] Trial 12 | Epoch   5 | train_acc=0.9990 val_acc=1.0000 val_loss=0.28621
+2026-04-13 13:29:38,493 [INFO] Trial 12 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.21177
+2026-04-13 13:29:39,209 [INFO] Trial 12 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.16038
+2026-04-13 13:29:40,493 [INFO] Trial 12 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.12684
+2026-04-13 13:29:41,667 [INFO] Trial 12 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.10788
+2026-04-13 13:29:42,707 [INFO] Trial 12 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.09651
+2026-04-13 13:29:43,471 [INFO] Trial 12 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.08731
+2026-04-13 13:29:44,283 [INFO] Trial 12 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.08212
+2026-04-13 13:29:45,022 [INFO] Trial 12 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.07950
+2026-04-13 13:29:45,857 [INFO] Trial 12 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.07959
+2026-04-13 13:29:46,674 [INFO] Trial 12 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.08050
+                                                                             Best trial: 0. Best value: 1:  60%|██████    | 12/20 [05:10<02:50, 21.35s/it]Best trial: 0. Best value: 1:  60%|██████    | 12/20 [05:10<02:50, 21.35s/it]Best trial: 0. Best value: 1:  65%|██████▌   | 13/20 [05:10<02:13, 19.12s/it]2026-04-13 13:29:48,806 [INFO] Trial 13 | Epoch   1 | train_acc=0.9248 val_acc=1.0000 val_loss=0.03411
+2026-04-13 13:29:49,600 [INFO] Trial 13 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00091
+2026-04-13 13:29:50,390 [INFO] Trial 13 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00049
+2026-04-13 13:29:51,118 [INFO] Trial 13 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00031
+2026-04-13 13:29:51,936 [INFO] Trial 13 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00028
+2026-04-13 13:29:52,712 [INFO] Trial 13 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00022
+2026-04-13 13:29:53,400 [INFO] Trial 13 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00018
+2026-04-13 13:29:54,114 [INFO] Trial 13 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00017
+2026-04-13 13:29:54,964 [INFO] Trial 13 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00015
+2026-04-13 13:29:55,705 [INFO] Trial 13 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00016
+2026-04-13 13:29:56,460 [INFO] Trial 13 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00013
+2026-04-13 13:29:57,342 [INFO] Trial 13 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00013
+2026-04-13 13:29:58,134 [INFO] Trial 13 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00012
+2026-04-13 13:29:59,047 [INFO] Trial 13 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00013
+2026-04-13 13:29:59,790 [INFO] Trial 13 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00013
+                                                                             Best trial: 0. Best value: 1:  65%|██████▌   | 13/20 [05:23<02:13, 19.12s/it]Best trial: 0. Best value: 1:  65%|██████▌   | 13/20 [05:23<02:13, 19.12s/it]Best trial: 0. Best value: 1:  70%|███████   | 14/20 [05:23<01:43, 17.32s/it]2026-04-13 13:30:02,088 [INFO] Trial 14 | Epoch   1 | train_acc=0.5333 val_acc=0.6222 val_loss=1.08139
+2026-04-13 13:30:03,360 [INFO] Trial 14 | Epoch   2 | train_acc=0.9943 val_acc=1.0000 val_loss=0.74268
+2026-04-13 13:30:04,649 [INFO] Trial 14 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.32448
+2026-04-13 13:30:05,911 [INFO] Trial 14 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.16163
+2026-04-13 13:30:07,000 [INFO] Trial 14 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.09758
+2026-04-13 13:30:08,149 [INFO] Trial 14 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.06964
+2026-04-13 13:30:09,295 [INFO] Trial 14 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.05522
+2026-04-13 13:30:10,392 [INFO] Trial 14 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.04638
+2026-04-13 13:30:11,569 [INFO] Trial 14 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03985
+2026-04-13 13:30:12,816 [INFO] Trial 14 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03698
+2026-04-13 13:30:13,984 [INFO] Trial 14 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03500
+2026-04-13 13:30:15,167 [INFO] Trial 14 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03322
+2026-04-13 13:30:16,277 [INFO] Trial 14 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03237
+2026-04-13 13:30:17,389 [INFO] Trial 14 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03240
+2026-04-13 13:30:18,494 [INFO] Trial 14 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.03252
+                                                                             Best trial: 0. Best value: 1:  70%|███████   | 14/20 [05:41<01:43, 17.32s/it]Best trial: 0. Best value: 1:  70%|███████   | 14/20 [05:41<01:43, 17.32s/it]Best trial: 0. Best value: 1:  75%|███████▌  | 15/20 [05:41<01:28, 17.68s/it]2026-04-13 13:30:20,195 [INFO] Trial 15 | Epoch   1 | train_acc=0.3848 val_acc=0.2889 val_loss=1.07836
+2026-04-13 13:30:21,109 [INFO] Trial 15 | Epoch   2 | train_acc=0.8410 val_acc=1.0000 val_loss=0.77464
+2026-04-13 13:30:21,905 [INFO] Trial 15 | Epoch   3 | train_acc=0.9838 val_acc=1.0000 val_loss=0.57132
+2026-04-13 13:30:22,689 [INFO] Trial 15 | Epoch   4 | train_acc=0.9962 val_acc=1.0000 val_loss=0.41772
+2026-04-13 13:30:23,475 [INFO] Trial 15 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.31541
+2026-04-13 13:30:24,284 [INFO] Trial 15 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.24485
+2026-04-13 13:30:25,071 [INFO] Trial 15 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.19430
+2026-04-13 13:30:25,817 [INFO] Trial 15 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.16541
+2026-04-13 13:30:26,615 [INFO] Trial 15 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.14666
+2026-04-13 13:30:27,417 [INFO] Trial 15 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.13372
+2026-04-13 13:30:28,139 [INFO] Trial 15 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.12481
+2026-04-13 13:30:28,919 [INFO] Trial 15 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.12016
+2026-04-13 13:30:29,767 [INFO] Trial 15 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.11638
+2026-04-13 13:30:30,548 [INFO] Trial 15 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.11277
+2026-04-13 13:30:31,372 [INFO] Trial 15 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.11417
+                                                                             Best trial: 0. Best value: 1:  75%|███████▌  | 15/20 [05:54<01:28, 17.68s/it]Best trial: 0. Best value: 1:  75%|███████▌  | 15/20 [05:54<01:28, 17.68s/it]Best trial: 0. Best value: 1:  80%|████████  | 16/20 [05:54<01:05, 16.27s/it]2026-04-13 13:30:34,522 [INFO] Trial 16 | Epoch   1 | train_acc=0.9448 val_acc=0.7111 val_loss=0.60595
+2026-04-13 13:30:36,579 [INFO] Trial 16 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00721
+2026-04-13 13:30:38,692 [INFO] Trial 16 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00013
+2026-04-13 13:30:40,726 [INFO] Trial 16 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00005
+2026-04-13 13:30:42,753 [INFO] Trial 16 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00004
+2026-04-13 13:30:44,710 [INFO] Trial 16 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00003
+2026-04-13 13:30:46,640 [INFO] Trial 16 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00004
+2026-04-13 13:30:48,624 [INFO] Trial 16 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00003
+2026-04-13 13:30:50,642 [INFO] Trial 16 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00003
+2026-04-13 13:30:53,108 [INFO] Trial 16 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00003
+2026-04-13 13:30:55,178 [INFO] Trial 16 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00003
+2026-04-13 13:30:57,079 [INFO] Trial 16 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00003
+2026-04-13 13:30:59,040 [INFO] Trial 16 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00003
+2026-04-13 13:31:00,978 [INFO] Trial 16 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00003
+2026-04-13 13:31:03,058 [INFO] Trial 16 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00003
+                                                                             Best trial: 0. Best value: 1:  80%|████████  | 16/20 [06:26<01:05, 16.27s/it]Best trial: 0. Best value: 1:  80%|████████  | 16/20 [06:26<01:05, 16.27s/it]Best trial: 0. Best value: 1:  85%|████████▌ | 17/20 [06:26<01:02, 20.86s/it]2026-04-13 13:31:04,907 [INFO] Trial 17 | Epoch   1 | train_acc=0.3114 val_acc=0.6444 val_loss=1.06650
+2026-04-13 13:31:05,682 [INFO] Trial 17 | Epoch   2 | train_acc=0.7648 val_acc=1.0000 val_loss=0.84255
+2026-04-13 13:31:06,471 [INFO] Trial 17 | Epoch   3 | train_acc=0.9695 val_acc=1.0000 val_loss=0.70175
+2026-04-13 13:31:07,217 [INFO] Trial 17 | Epoch   4 | train_acc=0.9981 val_acc=1.0000 val_loss=0.58657
+2026-04-13 13:31:07,948 [INFO] Trial 17 | Epoch   5 | train_acc=0.9990 val_acc=1.0000 val_loss=0.49912
+2026-04-13 13:31:08,689 [INFO] Trial 17 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.42934
+2026-04-13 13:31:09,414 [INFO] Trial 17 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.38066
+2026-04-13 13:31:10,201 [INFO] Trial 17 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.33640
+2026-04-13 13:31:10,945 [INFO] Trial 17 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.30468
+2026-04-13 13:31:11,777 [INFO] Trial 17 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.28382
+2026-04-13 13:31:12,524 [INFO] Trial 17 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.27677
+2026-04-13 13:31:13,206 [INFO] Trial 17 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.26142
+2026-04-13 13:31:13,914 [INFO] Trial 17 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.25691
+2026-04-13 13:31:14,708 [INFO] Trial 17 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.25905
+2026-04-13 13:31:15,418 [INFO] Trial 17 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.25697
+                                                                             Best trial: 0. Best value: 1:  85%|████████▌ | 17/20 [06:38<01:02, 20.86s/it]Best trial: 0. Best value: 1:  85%|████████▌ | 17/20 [06:38<01:02, 20.86s/it]Best trial: 0. Best value: 1:  90%|█████████ | 18/20 [06:38<00:36, 18.31s/it]2026-04-13 13:31:17,404 [INFO] Trial 18 | Epoch   1 | train_acc=0.9524 val_acc=1.0000 val_loss=0.01863
+2026-04-13 13:31:18,612 [INFO] Trial 18 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00007
+2026-04-13 13:31:19,790 [INFO] Trial 18 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:20,917 [INFO] Trial 18 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:22,029 [INFO] Trial 18 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:23,260 [INFO] Trial 18 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:24,390 [INFO] Trial 18 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:25,585 [INFO] Trial 18 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:26,711 [INFO] Trial 18 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:27,852 [INFO] Trial 18 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:28,946 [INFO] Trial 18 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:30,279 [INFO] Trial 18 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:31,354 [INFO] Trial 18 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:32,542 [INFO] Trial 18 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:33,652 [INFO] Trial 18 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+                                                                             Best trial: 0. Best value: 1:  90%|█████████ | 18/20 [06:56<00:36, 18.31s/it]Best trial: 0. Best value: 1:  90%|█████████ | 18/20 [06:56<00:36, 18.31s/it]Best trial: 0. Best value: 1:  95%|█████████▌| 19/20 [06:56<00:18, 18.28s/it]2026-04-13 13:31:36,504 [INFO] Trial 19 | Epoch   1 | train_acc=0.9724 val_acc=1.0000 val_loss=0.00201
+2026-04-13 13:31:38,530 [INFO] Trial 19 | Epoch   2 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00001
+2026-04-13 13:31:40,676 [INFO] Trial 19 | Epoch   3 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:42,586 [INFO] Trial 19 | Epoch   4 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:44,710 [INFO] Trial 19 | Epoch   5 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:46,673 [INFO] Trial 19 | Epoch   6 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:48,615 [INFO] Trial 19 | Epoch   7 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:50,816 [INFO] Trial 19 | Epoch   8 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:52,785 [INFO] Trial 19 | Epoch   9 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:54,775 [INFO] Trial 19 | Epoch  10 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:56,811 [INFO] Trial 19 | Epoch  11 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:31:59,006 [INFO] Trial 19 | Epoch  12 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:32:01,176 [INFO] Trial 19 | Epoch  13 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:32:03,207 [INFO] Trial 19 | Epoch  14 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+2026-04-13 13:32:05,179 [INFO] Trial 19 | Epoch  15 | train_acc=1.0000 val_acc=1.0000 val_loss=0.00000
+                                                                             Best trial: 0. Best value: 1:  95%|█████████▌| 19/20 [07:28<00:18, 18.28s/it]Best trial: 0. Best value: 1:  95%|█████████▌| 19/20 [07:28<00:18, 18.28s/it]Best trial: 0. Best value: 1: 100%|██████████| 20/20 [07:28<00:00, 22.27s/it]Best trial: 0. Best value: 1: 100%|██████████| 20/20 [07:28<00:00, 22.42s/it]
+2026-04-13 13:32:05,570 [INFO] ============================================================
+2026-04-13 13:32:05,570 [INFO] BEST TRIAL   : 0
+2026-04-13 13:32:05,570 [INFO] BEST EPOCH   : 4
+2026-04-13 13:32:05,570 [INFO] BEST VAL ACC : 1.00000
+2026-04-13 13:32:05,570 [INFO] BEST PARAMS  : {'lr': 0.00013700980740850865, 'n_filters1': 16, 'n_filters2': 16, 'dropout': 0.4683846956101482, 'batch_size': 64, 'optimizer': 'SGD', 'weight_decay': 4.685555705665813e-05}
+2026-04-13 13:32:05,570 [INFO] Summary saved to results/summary.json
