@@ -28,7 +28,7 @@ log = logging.getLogger(__name__)
 
 # ─── Model ───────────────────────────────────────────────────────────────────
 class SmallCNN(nn.Module):
-    def __init__(self, n_filters1, n_filters2, dropout, n_classes=3):
+    def __init__(self, n_filters1, n_filters2, dropout, n_classes=10):
         super().__init__()
         self.net = nn.Sequential(
             nn.Conv2d(3, n_filters1, 3, padding=1), nn.BatchNorm2d(n_filters1), nn.ReLU(),

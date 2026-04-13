@@ -1,8 +1,9 @@
 dataset:
-  n_samples: 1500
+  n_samples: 6000      # subset of CIFAR-10 for faster HPO
   img_size: 32
-  n_classes: 3
+  n_classes: 10        # CIFAR-10 has 10 classes
   seed: 42
+  use_cifar: true
 
 training:
   n_trials: 20
